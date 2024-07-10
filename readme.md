@@ -2,6 +2,10 @@
 
 EasyCrypto is a Go package that provides straightforward encryption and decryption functionality using AES encryption with a passphrase.
 
+## Project Origin
+
+🤖 This project originated from ChatGPT, but I injected some creative ideas to bring this code to life. So, while I won't claim to be the creator, let's just have fun with it! 😎
+
 ## Installation
 
 To use EasyCrypto, ensure you have Go installed and configured. Use the following command to install the package:
