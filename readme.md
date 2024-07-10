@@ -1,6 +1,6 @@
-# EasyCrypto
+# EasyCrypt
 
-EasyCrypto is a Go package that provides straightforward encryption and decryption functionality using AES encryption with a passphrase.
+EasyCrypt is a Go package that provides straightforward encryption and decryption functionality using AES encryption with a passphrase.
 
 ## Project Origin
 
@@ -8,22 +8,22 @@ EasyCrypto is a Go package that provides straightforward encryption and decrypti
 
 ## Installation
 
-To use EasyCrypto, ensure you have Go installed and configured. Use the following command to install the package:
+To use EasyCrypt, ensure you have Go installed and configured. Use the following command to install the package:
 
 ```sh
-go get github.com/watchakorn-18k/easycrypto
+go get github.com/watchakorn-18k/easycrypt
 ```
 
 ## Usage
 
-Import EasyCrypto in your Go code:
+Import EasyCrypt in your Go code:
 
 ```go
 import (
 	"fmt"
 	"log"
 
-	"github.com/watchakorn-18k/easycrypto"
+	"github.com/watchakorn-18k/easycrypt"
 )
 ```
 
