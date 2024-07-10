@@ -1,6 +1,6 @@
 package main
 
-import "github.com/watchakorn-18k/easycrypto"
+import "github.com/watchakorn-18k/easycrypt/easycrypto"
 
 func main() {
 	secretKey := "password"
