@@ -72,13 +72,13 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	println(encrypted)
+	println("encrypted: ", encrypted)
 	// Decrypt the encrypted text
 	decrypted, err := easycrypto.Decrypt(secretKey, encrypted)
 	if err != nil {
 		panic(err)
 	}
-	println(decrypted)
+	println("decrypted: ", decrypted)
 }
 ```
 
