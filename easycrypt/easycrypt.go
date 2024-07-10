@@ -1,4 +1,4 @@
-package easycrypto
+package easycrypt
 
 import (
 	"crypto/aes"
