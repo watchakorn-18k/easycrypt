@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/watchakorn-18k/easycrypto"
-)
+import "github.com/watchakorn-18k/easycrypto"
 
 func main() {
 	secretKey := "password"
@@ -12,11 +10,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	println(encrypted)
+	println("encrypted: ", encrypted)
 	// Decrypt the encrypted text
 	decrypted, err := easycrypto.Decrypt(secretKey, encrypted)
 	if err != nil {
 		panic(err)
 	}
-	println(decrypted)
+	println("decrypted: ", decrypted)
 }

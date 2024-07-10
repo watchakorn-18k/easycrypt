@@ -1,4 +1,4 @@
-module github.com/watchakorn-18k/easycrypto
+module github.com/watchakorn-18k
 
 go 1.22.1
 
