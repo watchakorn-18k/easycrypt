@@ -1,3 +1,4 @@
+// Package easycrypt provides simple functions for encrypting and decrypting text using AES encryption.
 package easycrypt
 
 import (
@@ -17,7 +18,21 @@ func generateKey(passphrase string) []byte {
 	return hash[:]
 }
 
-// Encrypt encrypts the given plaintext using AES encryption with the provided passphrase
+// Encrypt encrypts the given plaintext using AES encryption with the provided passphrase.
+//
+// The passphrase is used to generate a 32-byte key using SHA-256.
+// The plaintext is encrypted using AES in CFB mode and the result is encoded in base64.
+//
+// Example:
+//
+//	passphrase := "your-passphrase"
+//	plaintext := "your-plaintext"
+//	encryptedText, err := easycrypt.Encrypt(passphrase, plaintext)
+//	if err != nil {
+//	    fmt.Println("Encryption error:", err)
+//	    return
+//	}
+//	fmt.Println("Encrypted Text:", encryptedText)
 func Encrypt(passphrase, plaintext string) (string, error) {
 	key := generateKey(passphrase)
 	block, err := aes.NewCipher(key)
@@ -37,7 +52,21 @@ func Encrypt(passphrase, plaintext string) (string, error) {
 	return base64.URLEncoding.EncodeToString(ciphertext), nil
 }
 
-// Decrypt decrypts the given base64 encoded ciphertext using AES encryption with the provided passphrase
+// Decrypt decrypts the given base64 encoded ciphertext using AES encryption with the provided passphrase.
+//
+// The passphrase is used to generate a 32-byte key using SHA-256.
+// The ciphertext is decoded from base64 and decrypted using AES in CFB mode.
+//
+// Example:
+//
+//	passphrase := "your-passphrase"
+//	encryptedText := "your-encrypted-text"
+//	decryptedText, err := easycrypt.Decrypt(passphrase, encryptedText)
+//	if err != nil {
+//	    fmt.Println("Decryption error:", err)
+//	    return
+//	}
+//	fmt.Println("Decrypted Text:", decryptedText)
 func Decrypt(passphrase, cryptoText string) (string, error) {
 	key := generateKey(passphrase)
 	ciphertext, err := base64.URLEncoding.DecodeString(cryptoText)

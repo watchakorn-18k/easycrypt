@@ -1,6 +1,8 @@
-# EasyCrypt
+
 
 <div align="center">
+
+# EasyCrypt
 
   <a href="https://goreportcard.com/report/github.com/watchakorn-18k/easycrypt">
     <img src="https://img.shields.io/badge/%F0%9F%93%9D%20goreport-A%2B-75C46B?style=flat-square">
@@ -90,4 +92,4 @@ func main() {
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Unlicense license
