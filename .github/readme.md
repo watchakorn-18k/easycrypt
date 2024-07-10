@@ -4,12 +4,16 @@
 
 # EasyCrypt
 
+</div>
+
+
+<p align="center">
   <a href="https://goreportcard.com/report/github.com/watchakorn-18k/easycrypt">
     <img src="https://img.shields.io/badge/%F0%9F%93%9D%20goreport-A%2B-75C46B?style=flat-square">
   </a>
+  <a href="https://pkg.go.dev/github.com/watchakorn-18k/easycrypt"><img src="https://pkg.go.dev/badge/github.com/watchakorn-18k/easycrypt.svg" alt="Go Reference"></a>
+</p>
 
-
-</div>
 
 🔐 EasyCrypt is a Go package that provides straightforward encryption and decryption functionality using AES encryption with a passphrase.
 
