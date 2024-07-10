@@ -58,23 +58,20 @@ Decrypts the base64 encoded ciphertext using AES encryption with the provided pa
 ```go
 package main
 
-import (
-	"fmt"
-	"log"
-	"github.com/watchakorn-18k/easycrypto"
-)
+import "github.com/watchakorn-18k/easycrypt"
 
 func main() {
 	secretKey := "password"
 	text := "wk18k"
 	// Encrypt the plaintext
-	encrypted, err := easycrypto.Encrypt(secretKey, text)
+	encrypted, err := easycrypt.Encrypt(secretKey, text)
 	if err != nil {
 		panic(err)
 	}
 	println("encrypted: ", encrypted)
+
 	// Decrypt the encrypted text
-	decrypted, err := easycrypto.Decrypt(secretKey, encrypted)
+	decrypted, err := easycrypt.Decrypt(secretKey, encrypted)
 	if err != nil {
 		panic(err)
 	}
